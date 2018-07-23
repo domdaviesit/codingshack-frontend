@@ -21,6 +21,29 @@
 
   <h3>The DOM</h3>
   <p>The way the browser sees your HTML file ( a hierarchy ).</p>
+
+  <h3>More semantic tags</h3>
+  <h4>section</h4>
+  <p>section is like a semantic div. Is great for structuring a document, each section with it's own heading.</p>
+
+  <p>HTML introduced "semantic tags", meant to enforce the meaning (or 'semantics') of the information in a webpage. "Article"
+    is one of these tags. It represents a self-contained unit of composition in a document. As such, it can have a header
+    and a footer. That said, the relationship between H1-6 and Header is that of child-parent, WHEN necessary: That means,
+    a Header is more of a grouping element for "introductory" content (as its brother, the "footer") and it "might" contain
+    a H1-6 tag, but this is not a necessity (think about a header containing only a navigation bar, for example). More in
+    general, whenever in doubt I highly advise to use
+    <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/article">Mozilla MDN documentation</a> to deep dive into the topics you want to know more about. </p>
+  <p>Headers and Footers are semantically connected to the element that "contains" them (so, when you refer to the "header"
+    you generally refer to the position/semantic of the element in respect to the container element). The header tag is generally
+    used as a container for "heading" content, or "introductory" content to your page/area/panel. The header is often used
+    to contain a main navigation, or a big image or whatever introductory content you want to provide in your page/section/panel.
+    Similarly, the Footer is used to group content you want to put at the "bottom" of your content (like terms and condition,
+    about us etc in a typical website). Like their names imply, you use "header" and "footer" just a grouping elements, to
+    put content that you semantically want to be at the "top" (introduction) or at the "bottom" of your document/area/panel.
+  </p>
+  <p>Article - (block level) a self contained piece of content. It is a sectioning element but mainly for a unit of content
+    like a blog post, comment or forum post.</p>
+  <p>Articles can have headers and footers if the content is more than a simple header.</p>
 </body>
 
 </html>
