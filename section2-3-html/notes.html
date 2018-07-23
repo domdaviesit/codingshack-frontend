@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Coding Shack HTML Notes</h1>
+  <h1 id="theTop">Coding Shack HTML Notes</h1>
   <p>Everything that follows a block element(uses all available space) gets pushed down the page.</p>
   <h3>div and span</h3>
   <p>They are generic and should be used when other elements aren't suitable.</p>
@@ -44,6 +44,82 @@
   <p>Article - (block level) a self contained piece of content. It is a sectioning element but mainly for a unit of content
     like a blog post, comment or forum post.</p>
   <p>Articles can have headers and footers if the content is more than a simple header.</p>
+
+
+  <h3>Tags</h3>
+  <p>Anchor is inline. Hyperlinks are blue, underlined and cursor changes.</p>
+  <p>Back
+    <a href="#theTop">to top</a>
+  </p>
+
+  <h3>Forms</h3>
+  <p>fieldset groups related items, adds a border. use br tags for now but will style these in css in later lectures. Input
+    type submit vs button type submit. Button is more flexable. Input can only take a string eg the word "submit".</p>
+
+  <form action="#" method="POST">
+    <fieldset>
+      <label for="firstname">Firstname:</label>
+      <input type="text">
+      <br>
+      <label for="lastname">Lastname:</label>
+      <input type="text">
+      <br>
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+      <br>
+      <label>Country of origin:</label>
+      <select>
+        <option>France</option>
+        <option>Italy</option>
+        <option>Germany</option>
+      </select>
+      <br>
+      <label>Notes:</label>
+      <textarea></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <h4>When you click submit</h4>
+  <p>the browser looks for a form attribute action - which is the address to be contacted to submit the info. Thats why when
+    we are just taking notes and the action just has a # instead of an address the browser will use the current web address.
+    in dev tools between elements and sources you have network tab with will show the form.html path.</p>
+  <p>the name tag is essential for the browser to collect the info successfully. For radio input you'll also need the value.</p>
+  <p>method - post. best way to send form data as it avoids putting data in the url.</p>
+
+  <h3>Lists</h3>
+  <p>Descriptive lists- key value pairs. dt - title, dd - data</p>
+  <dl>
+    <dt>Home number:</dt>
+    <dd>0208789789</dd>
+
+    <dt>Home number:</dt>
+    <dd>0208789789</dd>
+  </dl>
+
+  <h3>Tables</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dominic</td>
+        <td>Davies</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <h3>More semantic tags</h3>
+  <p>Nav &amp; aside</p>
+  <p>nav is perfect to group nav links, just wrap them in nav tag.</p>
+  <p>aside - another container good for tangental content?? related posts etc. </p>
 </body>
 
 </html>
